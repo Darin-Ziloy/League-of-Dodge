@@ -104,11 +104,11 @@ GameObject:
   - component: {fileID: 8519142233089364284}
   - component: {fileID: 8519142233089364287}
   - component: {fileID: 8519142233089364278}
-  - component: {fileID: 8519142233089364274}
   - component: {fileID: 8519142233089364273}
   - component: {fileID: 8519142233089364272}
   - component: {fileID: 8519142233089364285}
   - component: {fileID: 8519142233089364275}
+  - component: {fileID: 1285703980450431548}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -167,19 +167,6 @@ CapsuleCollider:
   m_Height: 1.8
   m_Direction: 1
   m_Center: {x: 0, y: 0.92, z: 0}
---- !u!65 &8519142233089364274
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8519142233089364286}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.87, z: 0.64}
-  m_Center: {x: 0, y: 0.95, z: 0.61}
 --- !u!54 &8519142233089364273
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -244,7 +231,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eecaf5c3a9fd6c7478cfe8ffecddeb17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScanRarius: 40
+  ScanRarius: 60
+--- !u!65 &1285703980450431548
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519142233089364286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.05, z: 1}
+  m_Center: {x: 0, y: 1.12, z: 1.02}
 --- !u!1 &8519142233130217390
 GameObject:
   m_ObjectHideFlags: 0
@@ -531,9 +531,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8519142233513028037}
   - component: {fileID: 8519142233513028026}
+  - component: {fileID: 3612991642584189473}
   m_Layer: 0
   m_Name: Axe00_Right
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -661,6 +662,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.9304377, y: 1.5924478, z: 0.65058804}
     m_Extent: {x: 0.09660038, y: 0.4788707, z: 0.9174366}
   m_DirtyAABB: 0
+--- !u!65 &3612991642584189473
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519142233513028036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.57464486, y: 1.1019129, z: 0.12571822}
+  m_Center: {x: -0.5301255, y: -2.1636617, z: -1.4270551}
 --- !u!1 &8519142233530355941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,9 +2719,10 @@ GameObject:
   - component: {fileID: 8519142235129883041}
   - component: {fileID: 8519142235129883047}
   - component: {fileID: 8519142235129883046}
+  - component: {fileID: 6257722101945110700}
   m_Layer: 0
   m_Name: Axe00_Left
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2775,6 +2790,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6257722101945110700
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519142235129883040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.957741, y: 0.1768842, z: 1.833371}
+  m_Center: {x: 0.106855966, y: -0.0000017083894, z: 0.6867814}
 --- !u!1 &8519142235165062630
 GameObject:
   m_ObjectHideFlags: 0
