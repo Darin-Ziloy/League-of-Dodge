@@ -11,7 +11,7 @@ public class SkillAnim : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = this.GetComponent<Animator>();
     }
  
     void Update()

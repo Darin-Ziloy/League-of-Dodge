@@ -8,6 +8,8 @@ public class CameraBillboard : MonoBehaviour
     public float OffsetToCamera;
     protected Vector3 localStartPosition;
 
+    [SerializeField] private Transform CameraPos;
+
     void Start()
     {
         localStartPosition = transform.localPosition;
@@ -15,7 +17,7 @@ public class CameraBillboard : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(transform.position + Camera.main.transform.rotation * Vector3.forward,Camera.main.transform.rotation * Vector3.up);
+        transform.LookAt(transform.position + CameraPos.transform.rotation * Vector3.forward,CameraPos.transform.rotation * Vector3.up);
         if (!BillboardX || !BillboardY || !BillboardZ)
         {
             transform.rotation = Quaternion.Euler(BillboardX ? transform.rotation.eulerAngles.x : 0f, BillboardY ? transform.rotation.eulerAngles.y : 0f, BillboardZ ? transform.rotation.eulerAngles.z : 0f);

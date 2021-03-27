@@ -9,6 +9,7 @@ TagManager:
   - target
   - Enemy
   - Wall
+  - PlayerCamera
   layers:
   - Default
   - TransparentFX
